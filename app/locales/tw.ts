@@ -154,7 +154,7 @@ const tw: LocaleType = {
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
       Topic: "Generate a conversation title in the language of the user's first message, concisely capturing the essence of the main topic discussed in the initial exchange between the user and you, using no more than 10 tokens. Do not use quotation marks.",
       Summarize:
-        "Summarize the conversation, capturing the key points and main topics discussed. Ensure the summary does not exceed 250 tokens in length.",
+        "Summarize the conversation you and the user, capturing the key points and main topics discussed. Ensure the summary does not exceed 250 tokens in length.",
     },
     ConfirmClearAll: "確認清除所有對話、設定數據？",
   },
