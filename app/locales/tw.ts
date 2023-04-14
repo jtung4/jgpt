@@ -152,9 +152,9 @@ const tw: LocaleType = {
     Prompt: {
       History: (content: string) =>
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
-      Topic: "summarise the conversation in a concise title that instantly conveys the main topic. Use at most 10 words in the language used in the conversation. Don't use quotation marks in the title",
+      Topic: "Generate a conversation title in the language of the user's first message, concisely capturing the essence of the main topic discussed in the initial exchange between the user and you, using no more than 10 tokens. Do not start the title with quotation marks.",
       Summarize:
-        "summarise the conversation with the language used in the conversation in at most 250 tokens for continuing the conversation in future.",
+        "Summarize the conversation, capturing the key points and main topics discussed. Ensure the summary does not exceed 250 tokens in length.",
     },
     ConfirmClearAll: "確認清除所有對話、設定數據？",
   },
