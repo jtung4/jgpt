@@ -152,9 +152,9 @@ const tw: LocaleType = {
     Prompt: {
       History: (content: string) =>
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
-      Topic: "Summarise the conversation in a short and concise eye-catching title that instantly conveys the main topic. Use as few words as possible. The title must be in the same language used in the enquiry, e.g. use English for English enquiry, use zh-hant for traditional chinese enquiry. Don't use quotation marks at the beginning and at the end.",
+      Topic: "use the one language mainly used in the enquiry to summarise the conversation in a concise eye-catching title that instantly conveys the main topic. Use as few words as possible. Don't use quotation marks at the beginning and at the end.",
       Summarize:
-        "Summarise the conversation in at most 250 tokens for continuing the conversation in future. Use the language used in the conversation, e.g. use English for English conversation, use zh-hant for traditional chinese conversation",
+        "use the one language mainly used in the conversation to summarise the conversation in at most 250 tokens for continuing the conversation in future.",
     },
     ConfirmClearAll: "確認清除所有對話、設定數據？",
   },
