@@ -152,7 +152,7 @@ const tw: LocaleType = {
     Prompt: {
       History: (content: string) =>
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
-      Topic: "summarise the conversation in a short, concise, and eye-catching title in the language used in the enquiry. Use as few words as possible. Don't use quotation marks in the title",
+      Topic: "summarise the conversation in a short, concise, and eye-catching title with at most 10 words in the language used in the conversation. Don't use quotation marks in the title",
       Summarize:
         "use the language used in the conversation to summarise the conversation in at most 250 tokens for continuing the conversation in future.",
     },
