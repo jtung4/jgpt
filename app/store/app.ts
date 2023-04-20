@@ -583,6 +583,12 @@ export const useChatStore = create<ChatStore>()(
             }),
             {
               filterBot: false,
+              modelConfig: {
+                model: "gpt-3.5-turbo",
+                temperature: 1,
+                max_tokens: 4000,
+                presence_penalty: 0,
+            },
               onMessage(message, done) {
                 session.memoryPrompt = message;
                 if (done) {
