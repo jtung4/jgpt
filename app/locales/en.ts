@@ -129,8 +129,8 @@ const en: LocaleType = {
     },
     Usage: {
       Title: "Account Balance",
-      SubTitle(used: any, total: any) {
-        return `Used this month $${used}, subscription $${total}`;
+      SubTitle(used: any) {
+        return `Used this month $${used}`;
       },
       IsChecking: "Checking...",
       Check: "Check",
@@ -165,9 +165,9 @@ const en: LocaleType = {
         "This is a summary of the chat history between the AI and the user as a recap: " +
         content,
       Topic:
-        "Please generate a four to five word title summarizing our conversation without any lead-in, punctuation, quotation marks, periods, symbols, or additional text. Remove enclosing quotation marks.",
+        "Create a title for the conversation in less than 6 words, while avoiding preamble like 'Title:', direct text copies, single-word replies, quotation marks, translations, or brackets. The title should make third-party grasp the essence of the conversation in first sight.",
       Summarize:
-        "Summarize our discussion briefly in 200 words or less to use as a prompt for future context.",
+        "Use the language used by the user (e.g. en-us for english conversation, zh-hant for chinese conversation, etc.) to summarise the conversation in at most 300 words. The summary will be used as prompt for you to continue the conversation in the future.",
     },
     ConfirmClearAll: "Confirm to clear all chat and setting data?",
   },
